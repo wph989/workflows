@@ -27,9 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -g javascript-obfuscator          
-
-      - name: Clone BPB workjsindex
-
+          
       - name: Obfuscate BPB worker js
         run: |
           javascript-obfuscator index.js --output _worker.js \
